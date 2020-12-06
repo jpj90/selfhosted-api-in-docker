@@ -1,0 +1,8 @@
+﻿## how to get this into docker (windows or linux, doesn't matter)
+## https://docs.docker.com/engine/examples/dotnetcore/#create-a-dockerfile-for-an-aspnet-core-application
+
+## build the image (run from inside project folder):
+docker build -t consoletrying .
+
+##run the image: 
+docker run -d -p 4205:4200 --name myconsole consoletrying
